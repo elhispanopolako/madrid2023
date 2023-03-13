@@ -1,0 +1,26 @@
+name: Check for fly every 4 hours
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          start: 'npm test'
+          browser: 'chrome'
+          headless: true
