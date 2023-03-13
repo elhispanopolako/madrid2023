@@ -26,6 +26,8 @@ jobs:
           start: 'npm test'
           browser: 'chrome'
           headless: true
+          continue-on-error: true
+
       - name: Copy test execution videos
         run: |
           mkdir public

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json"
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "author": "elhispanopolako",
   "license": "ISC",
