@@ -1,5 +1,7 @@
 name: Check for fly every 4 hours
 on:
+  push:
+   branches: [ master ]
   schedule:
     - cron: '0 */4 * * *'
 
