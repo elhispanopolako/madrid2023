@@ -25,7 +25,6 @@ jobs:
         with:
           start: 'npm test'
           continue-on-error: true
-
       - name: Copy test execution videos
         run: |
           mkdir public
