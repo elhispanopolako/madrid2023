@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://www.kiwi.com/pl/wyszukiwanie/results/katowice-polska,rzeszow-polska,warszawa-polska,krakow-polska/madryt-hiszpania/2023-05-15_2023-05-19/2023-05-22_2023-05-28?stopNumber=0%7Etrue&sortBy=price&adults=5&children=2&infants=0",
-    "defaultCommandTimeout": 10000,
+    "defaultCommandTimeout": 20000,
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "configFile": "reporter-config.json"
